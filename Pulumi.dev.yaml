@@ -1,0 +1,5 @@
+config:
+  AzureOIDC:pulumiTokenForRepository:
+    secure: AAABAMYvc9CvVF58Nf2XNhObYyFlv08TSg2k4AcFZEqEK7cq9gnuBpq7V8F+HLyJIsJfQeyBRRLp4bO0yGy31t2I3Up1DPpq/8PnjQ==
+  github:token:
+    secure: AAABAKOkKCFsDxCxBMnS//PnC700iYKzd83R+V51kCJ7rf6SUttVIXNP115pYX4l+Mnyni0XnCplhCjoqGca+DoDa8nkmN3hIzkRKWXD5DXhFGWPyJ0EZkGS4eavs0Uh2bKVxtPp3Gt/3s5M1p0fW/CCoOEU/JFTdbUEPVE=

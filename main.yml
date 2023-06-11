@@ -1,0 +1,41 @@
+name: infra
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write   # required for OIDC auth
+  contents: read    # required to perform a checkout
+
+jobs:
+  provision-infra:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: Set node version to 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+      
+      - name: Install dependencies
+        run: pnpm install
+      
+      - name: Provision infrastructure
+        uses: pulumi/actions@v4.4.0
+        id: pulumi
+        with:
+          command: up
+          stack-name: dev
+        env:
+          ARM_USE_OIDC: true
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }} 

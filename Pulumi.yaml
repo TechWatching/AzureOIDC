@@ -1,0 +1,3 @@
+name: AzureOIDC
+runtime: nodejs
+description: A program to provision GitHub project with Azure OIDC configured for workflows

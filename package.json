@@ -1,0 +1,13 @@
+{
+    "name": "AzureOIDC",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^18"
+    },
+    "dependencies": {
+        "@pulumi/azure-native": "2.1.0",
+        "@pulumi/azuread": "^5.39.0",
+        "@pulumi/github": "^5.14.1",
+        "@pulumi/pulumi": "^3.75.0"
+    }
+}

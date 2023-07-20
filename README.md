@@ -8,7 +8,7 @@ This code is a Pulumi TypeScript program that can be executed from the Pulumi CL
 - a GitHub repository configured with several GitHub Actions secrets and an pre-configured GitHub Actions workflow
 - an Active Directory app registration, its associated Service Principal and a Federated Identity Credential
 
-![AzureOIDC](https://github.com/TechWatching/AzureOIDC/assets/15186176/f5847de6-345f-4443-8fae-6c989355f9cd)
+![AzureOIDC](https://github.com/TechWatching/AzureOIDC/assets/15186176/f6884b45-aa8f-4fe7-97d4-25b56523e4f5)
 
 I suggest you to read [the article](https://www.techwatching.dev/posts/azure-ready-github-repository) before using this code. And if you are not familiar with Pulumi you should check their [documentation](https://www.pulumi.com/docs/) or [learning pathways](https://www.pulumi.com/learn/) too.
 
